@@ -11,7 +11,7 @@ const Contact = () => {
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
   const [celebrationParticles, setCelebrationParticles] = useState([]);
   const canvasRef = useRef(null);
-
+ 
   // Unique success messages based on query content
   const getUniqueResponse = (message) => {
     const lowerMessage = message.toLowerCase();
