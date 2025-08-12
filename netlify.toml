@@ -1,6 +1,6 @@
 [build]
-  base = "client/"
-  command = "npm ci --legacy-peer-deps --no-audit --prefer-offline || npm install --legacy-peer-deps --no-audit"
+  base = "client"
+  command = "npm ci --legacy-peer-deps --no-audit --prefer-offline || npm install --legacy-peer-deps --no-audit && npm run build"
   publish = "client/build"
 
 [build.environment]
